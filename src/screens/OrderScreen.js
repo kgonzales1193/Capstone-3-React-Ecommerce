@@ -57,7 +57,7 @@ const OrderScreen = ({ match, history }) => {
       )
       const script = document.createElement('script')
       script.type = 'text/javascript'
-      script.src = `https://www.paypal.com/sdk/js?client-id=AWh3GA9PXTzWKj3aEamOldHA21EQlb0t5cyCIVftU17R-ZUoBio_CkxM25dMvM4uiDb76m2cXmnvotxR`
+      script.src = `https://www.paypal.com/sdk/js?client-id=AVwPKjo0ANyPQfs841afvvMOi6TTcBMIkAL3LSxVorKCJZ3tgbCkw5Hfyo7N5tlXOadB7kr06Pe4_AVI`
       script.async = true
       script.onload = () => {
         setSdkReady(true)
@@ -76,7 +76,7 @@ const OrderScreen = ({ match, history }) => {
         setSdkReady(true)
       }
     }
-  }, [dispatch, history, userInfo, orderId, successPay, successDeliver, order])
+  }, [dispatch, history, orderId, userInfo, successPay, successDeliver, order])
 
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult)
