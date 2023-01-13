@@ -66,7 +66,7 @@ const ProductEditScreen = ({ match, history }) => {
       }
 
       const { data } = await axios.post(
-        'https://react-shoppay.onrender.com/api/upload',
+        'https://react-shoppay.onrender.com/api/uploads',
         formData,
         config
       )
